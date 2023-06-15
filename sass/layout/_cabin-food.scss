@@ -1,0 +1,29 @@
+
+.cabin{
+    :nth-child(2){
+        margin-top: 3.2rem;
+    }
+    @include padding;
+    &__top{
+        @include flex(space-between);
+      h2{
+        @include font_h2;
+      }
+      p{
+        @include font_1;
+        color: $secondary;
+        @include pragraph_m;
+      }
+    }
+    &__button{
+        @include flex(space-between);
+        h2{
+            @include font_h2;
+          }
+          p{
+            @include font_1;
+            color: $secondary;
+            @include pragraph_m;
+          }
+    }
+}

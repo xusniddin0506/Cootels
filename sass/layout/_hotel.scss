@@ -1,0 +1,23 @@
+.cozy {
+    @include flex;
+    @include padding;
+ &__img{
+    width: 50%;
+
+ }
+ &__text{
+    width: 50%;
+    h2{
+       @include font_h2;
+    }
+    p{
+        @include font_1();
+        color:$secondary;
+        @include pragraph_m;
+    }
+    button{
+        @include btn;
+        @include font_2;
+    }
+ }
+ }

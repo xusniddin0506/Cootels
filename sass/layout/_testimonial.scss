@@ -1,0 +1,60 @@
+footer {
+    background-color: $footer-bg;
+    @include padding;
+    color: $third_color;
+}
+
+.footer {
+    @include flex(space-between);
+    align-items: flex-start;
+
+    &__left {
+         width: 30%;
+
+         h2 {
+              @include font_1(3.2rem, 600, 3.9rem);
+              font-family: montserrat;
+              color: $third_color;
+         }
+
+         p {
+              @include font_2;
+              line-height: 2.8rem;
+              @include pragraph_m;
+              color: $secondary;
+         }
+
+         .social__network {
+              @include flex;
+              gap: 2.4rem;
+
+         }
+    }
+
+    &__right {
+         width: 70%;
+         @include flex(space-around);
+         align-items: start;
+         gap: 11.3rem;
+
+         a {
+              color: $third_color;
+              @include font_1;
+              opacity: 0.7;
+         }
+
+         ul {
+              @include flex(start);
+              align-items: flex-start;
+              flex-direction: column;
+              row-gap: 2.4rem;
+              li:first-child{
+                   a{  
+                   opacity: 1;
+                   font-weight: 600;
+                   }
+              }
+         }
+    }
+
+}

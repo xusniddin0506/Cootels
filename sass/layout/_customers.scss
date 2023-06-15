@@ -1,0 +1,29 @@
+.customers{
+    @include padding;
+    text-align: center;
+    h2{
+        @include font_h2;
+    }
+    img{
+        @include img_m;
+    }
+    p{
+        @include font_1;
+        @include pragraph_m;
+        color: $secondary;
+    }
+    h3{
+        @include font_2(2.4rem, 600, 3.6rem);
+    }
+    .customers__div{
+        @include flex;
+        gap: 1.2rem;
+        @include div_right;
+       .customers__circle{
+        @include circle;
+       }
+       .customers__circle:hover{
+        @include circle_hover;
+       }
+    }
+}
